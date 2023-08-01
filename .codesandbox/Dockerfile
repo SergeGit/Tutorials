@@ -15,3 +15,9 @@ EXPOSE 8000
 # CodeSandbox supports debian and ubuntu based images
 
 
+
+
+RUN apt update && apt install -y python3 python3-pip
+
+
+RUN apt update && apt install -y python3 python3-pip
