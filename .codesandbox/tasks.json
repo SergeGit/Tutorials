@@ -1,0 +1,27 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "install-dependencies": [
+    {
+      "name": "pip install -r requirements.txt",
+      "command": "pip install -r requirements.txt",
+      "runAtStart": true
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "dev server",
+      "command": "python airline/manage.py runserver",
+      "runAtStart": true,
+      "preview": {
+        "port": 8000
+      },
+      "restartOn": {
+        "files": ["manage.py"],
+        "branch": false,
+        "resume": false
+      }
+    }
+  }
+}
